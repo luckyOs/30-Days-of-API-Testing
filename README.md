@@ -33,6 +33,8 @@ This project is a Maven-based Java project.
 │       └── resources/
 │           └── testdata/             // Data files for Day 30
 └── pom.xml                           // Maven dependencies (RestAssured, JUnit, Hamcrest)
+
+
 📝 Key Concepts Learned (Post-Challenge Review)
 Authentication: Moving from Basic Auth to Token-based (Cookie) authentication for subsequent API calls.
 
