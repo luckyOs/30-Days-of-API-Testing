@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "712899c5-2180-44d7-9dad-98a8a8cc46f4",
+		"name": "30 Days of API Testing",
+		"description": "<img src=\"https://content.pstmn.io/4770d0fb-8b71-4b98-9139-efd7d2ff56e9/MzBfRGF5c19vZl9BUElfVGVzdGluZy1IaWdoUmVzLmpwZw==\" alt=\"\" height=\"689\" width=\"467\">",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7380457"
+	},
+	"item": [
+		{
+			"name": "Exercise 01",
+			"item": [
+				{
+					"name": "GET Room",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://automationintesting.online/room/",
+							"protocol": "https",
+							"host": [
+								"automationintesting",
+								"online"
+							],
+							"path": [
+								"room",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Automationintesting",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://automationintesting.online",
+							"protocol": "https",
+							"host": [
+								"automationintesting",
+								"online"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://automationintesting.online/auth/login",
+							"protocol": "https",
+							"host": [
+								"automationintesting",
+								"online"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST auth",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Valid Response\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.response.to.be.withBody;",
+									"    pm.response.to.be.json;",
+									"    //pm.expect(jsonData.value).to.eql(100);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://automationintesting.online/auth/login",
+							"protocol": "https",
+							"host": [
+								"automationintesting",
+								"online"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
