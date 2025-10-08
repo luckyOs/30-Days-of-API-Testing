@@ -42,9 +42,17 @@ Payload Management: Creating and serializing JSON payloads using simple Strings 
 Assertion Depth: Verifying not just the status code, but also response schema and data types using Hamcrest matchers.
 Tool Comparison: When to use Postman (Exploratory) versus RestAssured (Automation).
 
-🔗 Resources
-Ministry of Testing: 30 Days of API Testing Checklist
+## 🔗 Resources
 
+📘 [Ministry of Testing – 30 Days of API Testing Checklist](https://www.ministryoftesting.com/)  
+🌐 [RestAssured Documentation](https://rest-assured.io/)  
+📚 [Postman Learning Center](https://learning.postman.com/)  
 
-The Restful Booker Platform
+---
+
+## 👩‍💻 Author
+
+**Oshani Lakchani**  
+QA Engineer | API Testing | Automation Enthusiast 
+
 📘Testing is an infinite loop of learning. Keep going!"
