@@ -20,20 +20,7 @@ Version Control: Git / GitHub
 💻 Code Structure
 This project is a Maven-based Java project.
 
-
-├── src/
-│   ├── main/
-│   │   └── java/
-│   └── test/
-│       ├── java/
-│       │   └── com/apitesting/
-│       │       ├── POSTRequest.java  // Login & Token retrieval
-│       │       ├── GetRoom.java      // GET requests and assertions
-│       │       └── BookingTests.java // Full workflow scenarios
-│       └── resources/
-│           └── testdata/             // Data files for Day 30
-└── pom.xml                           // Maven dependencies (RestAssured, JUnit, Hamcrest)
-
+![Postman Project Structure](https://github.com/luckyOs/30-Days-of-API-Testing/blob/main/Screenshot%202025-10-07%20at%2023.56.29.png)
 
 
 📝 Key Concepts Learned (Post-Challenge Review)
