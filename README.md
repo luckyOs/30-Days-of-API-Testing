@@ -20,7 +20,7 @@ Version Control: Git / GitHub
 💻 Code Structure
 This project is a Maven-based Java project.
 
-.
+
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -35,13 +35,11 @@ This project is a Maven-based Java project.
 └── pom.xml                           // Maven dependencies (RestAssured, JUnit, Hamcrest)
 
 
+
 📝 Key Concepts Learned (Post-Challenge Review)
 Authentication: Moving from Basic Auth to Token-based (Cookie) authentication for subsequent API calls.
-
 Payload Management: Creating and serializing JSON payloads using simple Strings and external POJOs (Plain Old Java Objects).
-
 Assertion Depth: Verifying not just the status code, but also response schema and data types using Hamcrest matchers.
-
 Tool Comparison: When to use Postman (Exploratory) versus RestAssured (Automation).
 
 🔗 Resources
@@ -49,5 +47,4 @@ Ministry of Testing: 30 Days of API Testing Checklist
 
 
 The Restful Booker Platform
-
-"Testing is an infinite loop of learning. Keep going!"
+📘Testing is an infinite loop of learning. Keep going!"
